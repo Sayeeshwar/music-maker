@@ -2,6 +2,8 @@ window.addEventListener("load", () => {
   const sounds = document.querySelectorAll(".sound");
   const pads = document.querySelectorAll(".pads div");
   const visual = document.querySelector(".visual");
+  const header = document.querySelector(".heading");
+  const app = document.querySelector(".app");
   const colors = [
     "#d63333",
     "#11c229",
@@ -11,14 +13,17 @@ window.addEventListener("load", () => {
     "#db247a"
   ];
 
+
   //Create bubbles on click
   const createBubbles = index => {
+    header.style.color = colors[index];
     const bubble = document.createElement("div");
     visual.append(bubble);
     bubble.style.backgroundColor = colors[index];
     bubble.style.animation = "jump 1s ease";
     bubble.addEventListener("animationend", () => {
       visual.removeChild(bubble);
+      header.style.color = null;
     });
   };
 

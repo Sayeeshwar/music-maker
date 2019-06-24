@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
 
 // function to toggle instrument
 function changeInstrument(){
-  const instruments = [".pads",".piano"];
+  const instruments = [".pads",".keys"];
   var i,j;
   //checks which tab is displayed currently
   if(document.querySelector(instruments[0]).style.display==="none")

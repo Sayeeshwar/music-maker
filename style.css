@@ -115,7 +115,22 @@ header p{
 }
 
 /*PIANO SECTION*/
+.keys{
+    display: none;
+    width:100%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.keys > div{
+    height: 100px;
+    width: 100px;
+}
 
-.piano{
-    display:none;
+.key1{
+    background: #d63333;
+}
+
+
+.key2{
+    background: #11c229;
 }

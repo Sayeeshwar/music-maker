@@ -1,0 +1,1 @@
+A simple JS project to make music by clicking on screen pads.

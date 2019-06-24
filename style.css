@@ -62,3 +62,13 @@ header p{
 .pad6{
     background: #db247a;
 }
+
+.visual>div{
+    height:50px;
+    width: 50px;
+    border-radius:50%;
+    position: absolute;
+    bottom:0%;
+    left:20%;
+    z-index: -1;
+}

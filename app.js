@@ -36,3 +36,26 @@ window.addEventListener("load", () => {
     });
   });
 });
+
+// function to toggle instrument
+function changeInstrument(){
+  const instruments = [".pads",".piano"];
+  var i,j;
+  //checks which tab is displayed currently
+  if(document.querySelector(instruments[0]).style.display==="none")
+  {
+    j=0;
+  }
+  else
+  {
+    j=1;
+  }
+  //Hide all tabs by default
+  for(i=0;i<instruments.length;i++)
+  {
+    document.querySelector(instruments[i]).style.display="none";
+  }
+  //display toggled instrument
+  document.querySelector(instruments[j]).style.display="flex";
+}
+
